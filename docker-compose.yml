@@ -1,0 +1,12 @@
+# docker-compose.yml for simple web sites, hosted by nginx
+
+version: "3"
+
+services:
+    sdp-web:
+        image: nginx:latest
+        restart: unless-stopped
+        volumes:
+            - /data/webapps/sdp-web/src:/usr/share/nginx/html:ro
+        ports:
+            - "127.0.0.1:8095:80"
