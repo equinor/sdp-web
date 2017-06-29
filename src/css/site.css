@@ -1,0 +1,74 @@
+/* http://entry.statoil.no/NewsAndMedia/BrandCentre/ApplyingTheBrand/Downloads/BC_Colour%20palette.pdf */
+
+/*
+
+Signal colour:
+----------------------
+magenta: #FF26A4
+
+Main colours:
+----------------------
+white: #FFFFFF
+ligt-grey: #F2F2F2
+dark-grey: #333333
+purple: #4A1870
+blue: #40537D
+
+Accent colours:
+----------------------
+light-blue: #68E6FC
+yellow: #F8ED37
+orange: #FF7900
+
+*/
+
+body {
+    background-color: #F2F2F2;
+}
+
+.main-content {
+    background-color: #FFFFFF;
+    min-height: 500px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+.bottom-vertical {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.navbar {
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #333333;
+    font-weight: bold;
+    background-color: #F2F2F2;
+}
