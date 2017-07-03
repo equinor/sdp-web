@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SDP: Software Development Platform</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sitenav.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container">
+        <div class="main-content">
+        <h1 class="text-center">Services</h1>
+        <hr/>
+
+        <div class="row baseline">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="http://wiki.statoil.no" target="_blank">
+                        <img src="images/wikipedia_logo.png" class="img-responsive"/>
+                        <h3>Statoil Wiki <small>http://wiki.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        A wiki using the same software as Wikipedia to provide a true wiki experience for projects in Statoil.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://sdp.statoil.no/wikidocs" target="_blank">
+                        <img src="images/wikipedia_logo.png" class="img-responsive"/>
+                        <h3>Wikidocs <small>https://sdp.statoil.no/wikidocs</small></h3>
+                    </a>
+                    <p>
+                        Easy and fast file-sharing filesystem only accessible within the Statoil network.
+                        It's typically used to host content (PDF, images, documents, videos) for the Statoil Wiki.
+                        See <a href="http://wiki.statoil.no/wiki/index.php/Help:Advanced_editing#Hosting_media_content_for_the_wiki">this wiki page</a> for more information
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="http://developer.statoil.no" target="_blank">
+                        <img src="images/general_logo.png" class="img-responsive"/>
+                        <h3>Developer blog <small>http://developer.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        Opinions, discussions and information from the programmer community at Statoil
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="thumbnail">
+                    <img src="images/sdp_logo.png" class="img-responsive"/>
+                    <h3>SDP Soft</h3>
+                    <p>
+                        A collection of compiled software that are mounted on a shared NSF at different Statoil premises
+                        in Norway and around the world. Access it on <u>/data/sdpsoft</u>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row baseline">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://github.com/statoil" target="_blank">
+                        <img src="images/github_logo.png" class="img-responsive"/>
+                        <h3>Github <small>https://github.com/statoil</small></h3>
+                    </a>
+                    <p>
+                        Statoil's playground at Github, a cloud service offering version control repositories.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://git.statoil.no" target="_blank">
+                        <img src="images/gitlab_logo.png" class="img-responsive"/>
+                        <h3>Gitlab <small>https://git.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        Distributed version control designed to handle everything from small to very large
+                        projects with speed and efficiency. Read more about it on the Statoil wiki:
+                        <ul>
+                            <li><a href="http://wiki.statoil.no/wiki/index.php/Software:Git" target="_blank">Software:Git</a></li>
+                            <li><a href="http://wiki.statoil.no/wiki/index.php/Software:Git_Tutorial" target="_blank">Software:Git_Tutorial</a></li>
+                            <li><a href="http://wiki.statoil.no/wiki/index.php/Software:User_Gitlab" target="_blank">Software:User_Gitlab</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="http://svn.statoil.no" target="_blank">
+                        <img src="images/subversion_logo.png" class="img-responsive"/>
+                        <h3>Subversion <small>http://svn.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        Simple and centralized version control. Read more about it on the Statoil wiki
+                        <a href="http://wiki.statoil.no/wiki/index.php/Subversion" target="_blank">Subversion</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="thumbnail">
+                    <a href="http://ci.statoil.no" target="_blank">
+                        <img src="images/jenkins_ci_logo.png" style="max-height: 250px;" class="img-responsive"/>
+                        <h3>Jenkins <small>http://ci.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        Easy-to-use continuous integration (CI) system for increased productivity.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row baseline">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://sdp.statoil.no/jira" target="_blank">
+                        <img src="images/jira_logo.png" class="img-responsive"/>
+                        <h3>Jira <small>https://sdp.statoil.no/jira</small></h3>
+                    </a>
+                    <p>
+                        Jira is a widely acknowledged task management system with a lot of other goodies
+                        underneath the hood.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://sdp.statoil.no/jira_hpc" target="_blank">
+                        <img src="images/jira_logo.png" class="img-responsive"/>
+                        <h3>Jira HPC <small>https://sdp.statoil.no/jira_hpc</small></h3>
+                    </a>
+                    <p>
+                        Jira is a widely acknowledged task management system with a lot of other goodies
+                        underneath the hood. <strong>NB!</strong> This is JIRA for HPC.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="https://sdp.statoil.no/trac" target="_blank">
+                        <img src="images/trac_logo.png" class="img-responsive"/>
+                        <h3>Trac <small>https://sdp.statoil.no/trac</small></h3>
+                    </a>
+                    <p>
+                        Trac is an enhanced wiki and issue tracking system with good subversion
+                        integration for software development projects
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="http://git-registry.statoil.no" target="_blank">
+                        <img src="images/docker_registry_logo.png" class="img-responsive"/>
+                        <h3>Docker Registry <small>http://git-registry.statoil.no</small></h3>
+                    </a>
+                    <p>
+                        Docker Registry is a stateless, highly scalable server side application that stores and
+                        lets you distribute Docker images. The Registry is open-source, under the permissive
+                        <a href="http://en.wikipedia.org/wiki/Apache_License" target="_blank">Apache license</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+    </div><!-- /.container -->
+  </body>
+</html>
