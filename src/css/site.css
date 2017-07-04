@@ -38,16 +38,6 @@ body {
     align-items: center;
 }
 
-.baseline {
-    display: flex;
-    align-items: baseline;
-}
-
-.bottom-vertical {
-    display: flex;
-    align-items: flex-end;
-}
-
 .footer {
     background-color: #FFFFFF;
     padding: 10px;
