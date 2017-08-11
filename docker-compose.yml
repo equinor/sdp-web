@@ -5,7 +5,9 @@ version: "3"
 services:
     sdp-web:
         image: nginx:latest
-        restart: "no"
+        container_name: "web01.sdp.statoil.no"
+        hostname: "web01.sdp.statoil.no"
+        restart: "unless-stopped"
         volumes:
             - ./src:/usr/share/nginx/html:ro
         ports:
