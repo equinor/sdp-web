@@ -1,14 +1,12 @@
-# docker-compose.yml for simple web sites, hosted by nginx
-
 version: "3"
 
 services:
-    sdp-web:
-        image: nginx:latest
-        container_name: "web01.sdp.statoil.no"
-        hostname: "web01.sdp.statoil.no"
-        restart: "unless-stopped"
-        volumes:
-            - ./src:/usr/share/nginx/html:ro
-        ports:
-            - "80:80"
+  sdp.statoil.no:
+    image: nginx:latest
+    container_name: "sdp.statoil.no"
+    hostname: "sdp.statoil.no"
+    restart: "unless-stopped"
+    volumes:
+      - ./src:/usr/share/nginx/html:ro
+    ports:
+      - "9001:80"
