@@ -6,18 +6,40 @@
 </head>
 <body>
     <header>
-        <a href="/"><h1>SDPTeam - Software Development Platform Team</h1></a>
-        <img src="images/statoil.png">
+        <section id="headerWrapper">
+            <a href="/"><h1>SDPTeam - Software Development Platform Team</h1></a>
+            <img src="images/statoil.png">
+        </section>
     </header>
     <main>
         <section id="intro">
             <section id="introWrapper">
                 <h2>Software Development Platform Team (SDPTeam)</h2>
-                <p>We're here to make your day as a developer/researcher in Statoil better. We provide software development tools which you can use/integrate with your project to work better and more efficient. Beneath you'll find the tools and services we provide.<a href="#contact">We love feedback and input! Contact us</a></p>
+                <p>We're here to make your day as a developer/researcher in Statoil better. We provide software development tools which you can use/integrate with your project to work better and more efficient. Below you'll find the tools and services we provide.<a href="#contact">We love feedback and input! Contact us</a></p>
             </section>
         </section>
 
         <section id="services">
+            <section class="service">
+                <section class="serviceImage">
+                    <img src="images/github.png" />
+                </section>
+                <section class="serviceText">
+                    <h2>GitHub</h2>
+                    <p>A web-based <strong>cloud service</strong> for version control using git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project. <a href="./github">Follow the instructions here</a> to get started with GitHub.</p>
+                </section>
+            </section>
+            
+            <section class="service">
+                <section class="serviceImage">
+                    <img src="images/gitlab.png" />
+                </section>
+                <section class="serviceText">
+                    <h2>GitLab</h2>
+                    <p>An online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects. This GitLab server is hosted <strong>internally</strong> and is based on the community edition. <a target="_blank" href="https://docs.gitlab.com/ce/user/index.html">Read the user documentation for GitLab here</a></p>
+                </section>
+            </section>
+
             <section class="service">
                 <section class="serviceImage">
                     <img src="images/jenkins.png" />
@@ -28,25 +50,7 @@
                 </section>
             </section>
 
-            <section class="service">
-                <section class="serviceImage">
-                    <img src="images/gitlab.png" />
-                </section>
-                <section class="serviceText">
-                    <h2>GitLab</h2>
-                    <p>An online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects. This GitLab server is hosted internally and is based on the community edition. <a href="https://docs.gitlab.com/ce/user/index.html">Read the user documentation for GitLab here</a></p>
-                </section>
-            </section>
 
-            <section class="service">
-                <section class="serviceImage">
-                    <img src="images/github.png" />
-                </section>
-                <section class="serviceText">
-                    <h2>GitHub</h2>
-                    <p>A web-based hosting service for version control using git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project. <a href="./github">Follow the instructions here</a> to get started with GitHub.</p>
-                </section>
-            </section>
 
             <section class="service">
                 <section class="serviceImage">
@@ -64,7 +68,7 @@
                 </section>
                 <section class="serviceText">
                     <h2>SDPSoft</h2>
-                    <p>SDPSoft is a collection of compiled software available for all Linux-servers that have Statoils network share mounted (/prog/sdpsoft). Here you'll find different versions of python, jdk, gcc, qt-x11, etc. Contact us for any questions regarding SDPSoft. <a href="some_link">Here you'll find documentation on how to use SDPSoft</a><p>
+                    <p>SDPSoft is a collection of compiled software available for all Linux-servers that have Statoils network share mounted (/prog/sdpsoft). Here you'll find different versions of python, jdk, gcc, qt-x11, etc. Contact us for any questions regarding SDPSoft. <a href="/sdpsoft">Here you'll find documentation on how to use SDPSoft</a><p>
                 </section>
             </section>
 
@@ -84,14 +88,16 @@
                 <h2>Contact us</h2>
                 <p>Need to order some IT related services for Statoil R&T?</p>
                 <p>Compile stuff? Software development? Infrastructure? Advisory? And more...</p>
-                <p>We prefer being contacted on Slack, in <a href="https://statoil.slack.com/messages/C02JJGV05">the #sdpteam channel</a></p>
-                <p>You can also send us an <a href="mailto:webmaster@example.com">email to gm_sds_rdi@statoil.com</a></p>
-                <p>ServiceNow is an option too: <a href="https://statoil.service-now.com/selfservice?id=sc_cat_item&sys_id=78bfbbce6fb455001f6446916e3ee453">Services@Statoil Statoil's R&T Toolbox</a></p>
+                <p>We prefer being contacted on Slack, in the <a  target="_blank" href="https://statoil.slack.com/messages/C02JJGV05">#sdpteam</a> channel</a></p>
+                <p>You can also send us an email: <a href="mailto:gm_sds_rdi@statoil.com">gm_sds_rdi@statoil.com</a></p>
+                <p>ServiceNow is an option too: <a  target="_blank" href="https://statoil.service-now.com/selfservice?id=sc_cat_item&sys_id=78bfbbce6fb455001f6446916e3ee453">Services@Statoil Statoil's R&T Toolbox</a></p>
             </section>
         </section>
 
     </main>
     <footer>
-        <p>#sdpteam  &nbsp;&nbsp; / &nbsp;&nbsp;  gm_sds_rdi[a]statoil.com</p>
+        <section id="footerWrapper">
+            <p><a  target="_blank" href="https://statoil.slack.com/messages/C02JJGV05">#sdpteam</a> &nbsp;&nbsp; / &nbsp;&nbsp;  <a href="mailto:gm_sds_rdi@statoil.com">gm_sds_rdi@statoil.com</a></p>
+        </section>
     </footer>
 </body>

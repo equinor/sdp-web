@@ -6,42 +6,73 @@
 </head>
 <body style="display: flex; flex-direction: column;">
     <header>
-        <a href="/"><h1>SDPTeam - Software Development Platform Team</h1></a>
-        <img src="../images/statoil.png">
+        <section id="headerWrapper">
+            <a href="/"><h1>SDPTeam - Software Development Platform Team</h1></a>
+            <img src="../images/statoil.png">
+        </section>
     </header>
 
-    <div style="display: flex; flex-direction: column; width: 40%; margin: 100px auto 0 auto;">
+    <div style="display: flex; flex-direction: column; width: 40%; margin: 100px auto 100px auto;">
         <div style="text-align: center; align-self: center;">
             <img src="../images/jenkins.png" style="width: 150px;" />
             <h1>Jenkins</h1>
         </div>
         <div style="color: #3a3a3a;">
-            <h1>We offer various instances</h1>
-            <p>One gigantic Jenkins instance which everyone use is a security problem, so we have different offerings.</p>
-            <h2>Jenkins Trondheim</h2>
-            <p>
-            <ul style="text-align: left; margin: 0 0 0 5%;">
-                <li>The name of your project</li>
-                <li>The project template you want, choosing <a href="https://sdp.statoil.no/jira/templates.png">from this list</a></li>
-            </ul>
-            <p style="text-align: left;">And...</p>
-            <ul style="text-align: left; margin: 0 0 0 5%;">
-                <li>Order or renew your Jira Software access at <a href="https://accessit.statoil.no/Home/Search?term=JIRA+SOFTWARE">AccessIT</a></li>
-            </ul>
+            <h1 style="margin: 3em 0 0 0;">We offer various instances</h1>
+            <p style="margin: 0 0 3em 0;">One gigantic Jenkins instance which everyone use is a security problem, so we have different offerings.</p>
+            <h2 style="margin: 1em 0 0.5em 0;">Your very own instance</h2>
+            <a>ci.statoil.no/$whatever_you_want</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This instance type is for teams and/or projects that want their very own instance.
+            </p>
+            <p style="margin: 0.5em 0 0 0;">
+                We have some terms for these instances:
+            </p>
+            <ol style="margin: 0.5em 0 0 2em;">
+                <li>We own the servers where Jenkins is running.</li>
+                <li>We keep the Jenkins version updated, you keep the plugins updated.</li>
+                <li>You get to become admin for the Jenkins instance and you decide who gets access and what plugins to install.</li>
+                <li>To help with configuration and troubleshooting, we in the SDPTeam will also be admins on the instances.</li>
+                <li>When we upgrade Jenkins, we'll have an announcement about which instances will be affected.</li>
+                <li>If some plugins stops working after upgrade, it's up to you to update/fix/replace that plugin. You can of course ask us for help.</li>
+                <li>Instances will be available under ci.statoil.no/$whatever_you_want</li>
+                <li>Servers will be backed up with virtual machine snapshots at first, but later we'll have file-level backup in place as well.</li>
+                <li>Servers will be placed in AWS unless you ask for something else.</li>
+                <li>Instances run in docker, meaning they are very good at running Jenkins, nothing else. In other words, you should add build slaves if you want things done. Unable to find any good way to serve Jenkins ssh-pub-key automatically (used when setting up slaves), you'll get this key when your instance is ready. After this, you can always just ask us for it.</li>
+            </ol>
+            <p style="margin: 0.5em 0 0 0;">What do we need from you to create a Jenkins instance?</p>
+            <ol style="margin: 0.5em 0 0 2em;">
+                <li>Your uri-prefix, typically your team/project name (see #7 above)</li>
+                <li>Statoil shortname for one of the admins. This admin will decide further who gets access.</li>
+                <li>A little bit of patience since this service is not very mature yet.</li>
+                
+            </ol>
+            <p style="margin: 0.5em 0 0 0;">If this sounds interesting, send the order to gm_sds_rdi@statoil.com</p>
+            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Public</h2>
+            <a href="https://ci.statoil.no/public">ci.statoil.no/public</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This Jenkins instance is to be used for <strong>non-sensitive</strong> projects only. Everyone in Statoil can read and change all information on this instance.
+            </p>
+            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Trondheim</h2>
+            <a href="https://ci.statoil.no/tr">ci.statoil.no/tr</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This instance is for teams and/or projects where it makes sense to store the pipeline in Trondheim (this is just a guideline, and no strict policy). Contact us for access.
+            </p>
+            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Stavanger</h2>
+            <a href="https://ci.statoil.no/st">ci.statoil.no/st</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This instance is for teams and/or projects where it makes sense to store the pipeline in Stavanger (this is just a guideline, and no strict policy). Contact us for access.
+            </p>
+            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Bergen</h2>
+            <a href="https://ci.statoil.no/be">ci.statoil.no/be</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This instance is for teams and/or projects where it makes sense to store the pipeline in Bergen (this is just a guideline, and no strict policy). Contact us for access.
+            </p>
+            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Others</h2>
+            <a href="https://ci.statoil.no/others">ci.statoil.no/others</a>
+            <p style="margin: 0.5em 0 0 0;">
+                This instance is for teams and/or projects where none of the other location specific Jenkins instances made sense to use. Contact us for access.
+            </p>
         </div>
-Today we're announcing Jenkins instances for projects and/or teams!
-Here are some of our terms/information:1. We own the servers where Jenkins is running.
-2. We keep the Jenkins version updated, you keep the plugins updated.
-3. You get to become admin for the Jenkins instance and you decide who gets access and what plugins to install.
-4. To help with configuration and troubleshooting, we in the SDPTeam will also be admins on the instances.
-5. When we upgrade Jenkins, we'll have an announcement about which instances will be affected.
-6. If some plugins stops working after upgrade, it's up to you to update/fix/replace that plugin. You can of course ask us for help.
-7. Instances will be available under ci.statoil.no/<your_instance_name>
-8. Servers will be backed up with virtual machine snapshots at first, but later we'll have file-level backup in place as well.
-9. Servers will be placed in AWS unless you ask for something else.
-10. Instances run in docker, meaning they are very good at running Jenkins, nothing else. In other words, you should add build slaves if you want things done. Unable to find any good way to serve Jenkins ssh-pub-key automatically (used when setting up slaves), you'll get this key when your instance is ready. After this, you can always just ask us for it.What do we need from you to create a Jenkins instance?
-1. Your uri-prefix, typically your team/project name (see #7 above)
-2. Statoil shortname for one of the admins. This admin will decide further who gets access.
-3. A little bit of patience since this service is not very mature yet.If this sounds interesting, send the order to gm_sds_rdi@statoil.comLet us know if you have any questions or have any thoughts on how this service could be better
     </div>
 </body>
