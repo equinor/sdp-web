@@ -50,10 +50,9 @@
             <section class="code">
                 source /prog/sdpsoft/env.csh --help
             </section>
-            <h2 style="margin: 1em 0 1em 0;">How to <strong>NOT</strong> use SDPSoft</h2>
-            <p>Before the new env-scripts were created, sourcing SDPSoft was done with <strong>environment.sh</strong> and <strong>environment.csh</strong>. You can to some degree specify what software you want with these scripts, but they also do some assumptions to what software you might want as well. Since most people never explicitly defined which version they wanted, these scripts assumed you wanted latest of everything.</p>
-            <p> This made maintainance hard, since everytime we were to distribute new software, the new version had to be just right and perfectly compiled without anything breaking. That's hard when we try to keep things up to date and have a limited amout of time to test.</p>
-            <p style="margin: 1em 0;"><strong>bottom line: Don't use environment.sh and environment.csh</strong></p>
+            <h2 style="margin: 1em 0 1em 0;">Deprecation note</h2>
+            <p>Before the new env-scripts were created, sourcing SDPSoft was done with <strong>environment.sh</strong> and <strong>environment.csh</strong>. You can to some degree specify what software you want with these scripts, but they also do some assumptions to what software you might want as well. If you don't specify anything, you'll get the latest version of various software, which was the common thing to do.</p>
+            <p>This design made maintainance of SDPSoft hard. New distributed software had to be just right and perfectly compiled without any breaking changes. Due to limited time for testing new software, we're now moving away from these scripts.</p>
         </div>
     </div>
 </body>
