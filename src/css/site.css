@@ -68,16 +68,50 @@ main {
     display: flex;
     flex-direction: column;
 }
-#intro, #contact {
+#intro {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#contact {
     width: 100%;
 }
-#intro h2, #contact h2 { margin: 0 0 1em 0; }
-#introWrapper, #contactWrapper {
+#intro h2, #contact h2 { margin: 0 0 1em 0;}
+#introWrapper {
     background: #f8f8f8;
     border-radius: 2px;
     width: 40%;
-    margin: 0 auto;
     padding: 2em;
+    margin-top: auto;
+    margin-right: 13vw;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+#contactWrapper {
+    background: #f8f8f8;
+    border-radius: 2px;
+    width: 40%;
+    padding: 2em;
+    margin: auto;
+}
+#faqWrapper {
+    background: #f8f8f8;
+    border-radius: 2px;
+    border: 2px solid #a1a1a1;
+    width: 10%;
+    height: 100%;
+    padding: 1em;
+
+}
+#faqHREF {
+    text-decoration:  none;
+    text-align: center;
+}
+
+#faqWrapper:hover {
+    background: #f3f3f3;
 }
 #services {
     display: flex;
