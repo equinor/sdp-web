@@ -17,29 +17,44 @@
             <h1>Frequently Asked Questions</h1>
         </div>
         <div style="color: #3a3a3a;">
-            <h2 style="margin: 1em 0 0.5em 0;">Can you add xxx linux package to /prog/sdpsoft?</h2>
+
+            <h2 style="margin: 1em 0 0.5em 0;">Can you add $this package to SDPSoft?</h2>
             <p style="margin: 0.5em 0 0 0;">
-                Yes, we can. But it requires some work and will take some time. It is often not prioritized unless everyone in Statoil realy need that package right now.<br>
-                We therefor recommend everyone to utilize pythons "Virtual Environments" functionality. This enables you to install any python package you'd like and have all the necessary packages be linked to the python project in an efficient way.<br>
-                Alternatively run pip install with the "--user" option to install the packages in your home directory. <br>
-                Or, even better, get a Linux laptop or Linux virtual machine and have no limitations!
-            </p>
-            <h2 style="margin: 1em 0 0.5em 0;">Can you add xxx package to python on /prog/sdpsoft?</h2>
+            If it makes sense, yes, it's all dependent on what you want/need added. If you get your wish "granted", know that compiling software can be tedious / troublesome and time consuming, so don't expect it to be available immediately. We often end up in a <a href="https://en.wikipedia.org/wiki/Dependency_hell">dependency hell</a>.</p>
+            <p style="margin: 0.5em 0 0 0;">Software that will benefit alot of users will be prioritized.<p>
+                
+            <h2 style="margin: 1em 0 0.5em 0;">Can you add $this python module to SDPSoft?</h2>
             <p style="margin: 0.5em 0 0 0;">
-                This instance is for teams and/or projects where it makes sense to store the pipeline in Stavanger (this is just a guideline, and no strict policy). Contact us for access.
+            If it makes sense, yes. We strongly recommend considering if python virtual environments can solve your problem instead. You could for instance use one of the python versions in SDPSoft to create your virtual environemtn and from there only use that virtual environment and install whichever module you want. Read more about python virtual environment on the <a href="LINK TO WIKI">Wiki</a>.
             </p>
-            <h2 style="margin: 1em 0 0.5em 0;">How do i setup python to use a virtual environment?</h2>
+
+            <h2 style="margin: 1em 0 0.5em 0;">How do I use python virtual environments?</h2>
             <p style="margin: 0.5em 0 0 0;">
-                This instance is for teams and/or projects where it makes sense to store the pipeline in Bergen (this is just a guideline, and no strict policy). Contact us for access.
+            Head over to the <a href="https://docs.python.org/3/tutorial/venv.html">fabolous official python documentation for virtual environments</a>
             </p>
-            <h2 style="margin: 1em 0 0.5em 0;">How to jenkins?</h2>
+
+            <h2 style="margin: 1em 0 0.5em 0;">How do I set up Docker in Statoil?</h2>
             <p style="margin: 0.5em 0 0 0;">
-                This instance is for teams and/or projects where none of the other location specific Jenkins instances made sense to use. Contact us for access.
+                Head over to this astonishing resource on <a href="https://wiki.statoil.no/wiki/index.php/WIKIHOW:Set_up_Docker_on_a_CentOS_7_server">the wiki</a> and read about it there.
             </p>
-            <h2 style="margin: 1em 0 0.5em 0;">Jenkins Public</h2>
+
+            <h2 style="margin: 1em 0 0.5em 0;">How do I set up a Jenkins slave?</h2>
             <p style="margin: 0.5em 0 0 0;">
-                This Jenkins instance is to be used for <strong>non-sensitive</strong> projects only. Everyone in Statoil can read and change all information on this instance.
+                Head over to this marvelous resource on <a href="LINK TO WIKI">the wiki</a> and read about it there.
             </p>
+
+            <h2 style="margin: 1em 0 0.5em 0;">Can you add $this plugin to Jenkins?</h2>
+            <p style="margin: 0.5em 0 0 0;">
+                Yes, most likely we can. However, we might have to restart the Jenkins master after installation or the plugin might be enabled right away. If the master needs to be restarted, know that we will wait until the master isn't doing any builds and all further builds will be freezed (maintenance mode). In some circumstances, this waiting can take a while.
+            </p>
+
+            <p style="margin: 0.5em 0 0 0;">
+            If you have your own Jenkins instance, either you install it yourself, or you ask the Jenkins master admin (usually the one responsible for the project the instance is for).<p>
+            </p>
+            <p style="margin: 0.5em 0 0 0;">
+            Installing plugins is easy: Go to <strong>Manage Jenkins</strong> --> <strong>Manage Plugins</strong> --> <strong>Available tab</strong> --> <strong>Filter/Search</strong> --> <strong>Tick checkbox(es)</strong> --> <strong>Install</strong>
+            </p>
+
         </div>
     </div>
         <section id="contact">
