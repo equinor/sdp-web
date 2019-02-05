@@ -1,12 +1,12 @@
 version: "3"
 
 services:
-  sdp.statoil.no:
+  sdp.equinor.no:
     image: nginx:latest
-    container_name: "sdp.statoil.no"
-    hostname: "sdp.statoil.no"
+    container_name: "sdp.equinor.no"
+    hostname: "sdp.equinor.no"
     restart: "unless-stopped"
     volumes:
       - ./src:/usr/share/nginx/html:ro
     ports:
-      - "80:80"
+      - "9001:80"

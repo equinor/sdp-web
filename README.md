@@ -1,3 +1,3 @@
 ## sdp-web
 
-Webpage for http://sdp.statoil.no
+Webpage for http://sdp.equinor.no
